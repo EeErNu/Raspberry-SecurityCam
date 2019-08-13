@@ -1,5 +1,12 @@
 # Raspberry-SecurityCam
 
+## Idea
+
+1. Use webcam 
+2. Detect human
+3. When human detected - make a picture (if human detected repeat every 1 sec)
+4. Send picture to GoogleDrive
+
 ## OpenCV Installation
 
 Working for **Ubuntu 18.04.3 LTS**
