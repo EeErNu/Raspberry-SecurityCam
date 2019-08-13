@@ -16,8 +16,26 @@ while(True):
         roi_gray = gray[y:y + h, x:x + w]
         roi_color = frame[y:y + h, x:x + w]
 
+        # Checks if face is detected; if so - take a picture
+        if (x, y, w , h) != None:
+            camera_port = 0
+            ramp_frames = 1
+
+            def get_image():
+                retval, im = cap.read()
+                return im
+
+            for i in xrange(ramp_frames):
+                temp = get_image()
+
+            print("Taking image...")
+            camera_capture = get_image()
+            file = "test_image.png"
+            cv2.imwrite(file, camera_capture)
+
     # Display the resulting frame
-    cv2.imshow('frame',frame)
+    cv2.imshow('frame', frame)
+
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
