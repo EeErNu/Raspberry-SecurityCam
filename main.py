@@ -41,4 +41,3 @@ def faceDetection():
 
 if __name__== "__main__":
     faceDetection()
-
