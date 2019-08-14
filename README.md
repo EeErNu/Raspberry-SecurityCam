@@ -2,10 +2,16 @@
 
 ## Idea
 
-1. Use webcam 
-2. Detect human
-3. When human detected - make a picture (if human detected repeat every 1 sec)
-4. Send picture to GoogleDrive
+To be able to detect faces with the help of webcam and Raspberry Pi and send the data through email
+
+
+## TODO
+
+- [x] Detect face with OpenCV with webcam
+- [x] Take a picture when the face is detected
+- [x] Send this picture through email
+- [ ] Install everything on Raspberry and setup camera
+
 
 ## OpenCV Installation
 
